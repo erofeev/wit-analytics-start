@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Personal notes (не коммитим личные заметки)
+personal-notes/
+scratch/
+
+# Email attachments (если очень большие)
+# communications/attachments/**/*.msg
+# Раскомментируйте если .msg файлы слишком большие
+
+# Build artifacts
+*.log
+
+# Claude cache (если будет)
+.claude/cache/
