@@ -1,0 +1,45 @@
+{
+  "project": {
+    "name": "WIT Analytics Starter",
+    "description": "Стартовый проект для аналитиков веб-приложений",
+    "version": "1.0.0",
+    "language": "ru"
+  },
+  "id_counters": {
+    "entity": 0,
+    "use_case": 0,
+    "requirement_functional": 0,
+    "requirement_nonfunctional": 0,
+    "communication": 0
+  },
+  "id_formats": {
+    "entity": "ENT-{number:03d}",
+    "use_case": "UC-{number:03d}",
+    "requirement_functional": "REQ-F-{number:03d}",
+    "requirement_nonfunctional": "REQ-NF-{number:03d}",
+    "communication": "COM-{year}-{number:03d}"
+  },
+  "validation": {
+    "require_frontmatter": true,
+    "require_bidirectional_links": true,
+    "allow_orphan_artifacts": false,
+    "required_fields": {
+      "entity": ["id", "название", "статус", "дата_создания", "автор", "версия"],
+      "use_case": ["id", "название", "приоритет", "статус", "дата_создания", "автор", "версия"],
+      "requirement": ["id", "название", "категория", "приоритет", "статус", "дата_создания", "автор", "версия"]
+    }
+  },
+  "statuses": {
+    "allowed": ["Draft", "Review", "Approved", "Implemented", "Deprecated"],
+    "default": "Draft"
+  },
+  "priorities": {
+    "moscow": ["Must Have", "Should Have", "Could Have", "Won't Have"],
+    "simple": ["High", "Medium", "Low"]
+  },
+  "changelog": {
+    "versioning": "semver",
+    "auto_increment": true,
+    "create_on_update": "ask"
+  }
+}
